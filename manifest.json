@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "AI Design Buddy",
+  "version": "1.0",
+  "description": "Create quick designs with AI-powered captions.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://*/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon16.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

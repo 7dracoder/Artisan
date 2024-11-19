@@ -1,0 +1,22 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h3 {
+    color: #007bff;
+}
+
+#output {
+    display: none;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#designCanvas {
+    border: 1px solid #000;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
