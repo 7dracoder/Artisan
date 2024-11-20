@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "AI Design Buddy",
+  "name": "Artisan",
   "version": "1.0",
   "description": "Create quick designs with AI-powered captions.",
   "permissions": ["activeTab", "scripting", "storage"],
