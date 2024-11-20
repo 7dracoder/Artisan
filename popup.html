@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Design Buddy</title>
+    <title>Artisan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
 <div class="container mt-3">
-    <h3 class="text-center">AI Design Buddy</h3>
+    <h3 class="text-center">Artisan</h3>
     <form id="design-form">
         <div class="mb-3">
-            <label for="theme" class="form-label">Theme/Topic</label>
+            <label for="theme" class="form-label">Give prompt!</label>
             <input type="text" class="form-control" id="theme" placeholder="E.g., Celebration, Motivation">
         </div>
         <div class="mb-3">
-            <label for="template" class="form-label">Choose Template</label>
+            <label for="template" class="form-label">Choose Emotion</label>
             <select class="form-select" id="template">
                 <option value="square">Square (1080x1080)</option>
                 <option value="banner">Banner (1080x450)</option>
                 <option value="portrait">Portrait (1080x1350)</option>
             </select>
+            <textarea class="form-control" id="initialoutput" rows="2" placeholder="output"></textarea>
+            <button type="button" class="btn btn-primary w-100" id="generate">Generate AI Caption</button>
         </div>
         <div class="mb-3">
             <label for="user-caption" class="form-label">Your Caption</label>
@@ -37,7 +39,6 @@
                 <option value="zh">Chinese</option>
             </select>
         </div>
-        <button type="button" class="btn btn-primary w-100" id="generate">Generate AI Caption</button>
     </form>
 
     <div id="output" class="mt-4">
